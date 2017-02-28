@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<FlowConfigurations>
+    <Flow>
+        <Frame>
+            <Ethernet_header>
+                <h_dest>5c:e3:0e:cf:4e:40</h_dest>
+                <h_source>00:0c:29:87:cc:dd</h_source>
+                <proto>0x800</proto>
+            </Ethernet_header>
+	    <IPv4_header>
+                <ihl>5</ihl>
+                <version>4</version>
+                <tos>2</tos>
+                <tot_len>84</tot_len>
+                <id>258</id>
+                <frag_off>0</frag_off>
+                <ttl>128</ttl>
+                <protocol>17</protocol>
+                <check>0xd45d</check>
+                <saddr>10.0.0.116</saddr>
+                <daddr>166.248.0.1</daddr>
+	    </IPv4_header>
+            <UDP_header>
+                <source>500</source>
+                <dest>500</dest>
+                <len>64</len>
+                <check>0</check>
+            </UDP_header>            
+            <Custom_data>
+               <file>data/data_udp.bin</file>
+            </Custom_data>
+        </Frame>
+    </Flow>
+</FlowConfigurations>

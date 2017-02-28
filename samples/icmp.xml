@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<FlowConfigurations>
+    <Flow>
+        <Frame>
+            <Ethernet_header>
+                <h_dest>ff:ff:ff:ff:ff:ff</h_dest>
+                <h_source>00:00:de:ad:be:ef</h_source>
+                <proto>0x800</proto>
+            </Ethernet_header>
+	    <IPv4_header>
+                <ihl>5</ihl>
+                <version>4</version>
+                <tos>2</tos>
+                <tot_len>28</tot_len>
+                <id>258</id>
+                <frag_off>0</frag_off>
+                <ttl>128</ttl>
+                <protocol>1</protocol>
+                <check>0x7687</check>
+                <saddr>192.168.1.2</saddr>
+                <daddr>192.168.1.1</daddr>
+            </IPv4_header>
+            <ICMP_header>
+                <type>2</type>
+                <code>1</code>
+                <checksum>0</checksum>
+                <echo_id>3456</echo_id>
+                <echo_sequence>10</echo_sequence>
+                <gateway>0.0.0.0</gateway>
+                <frag_unused>0</frag_unused>
+                <frag_mtu>0</frag_mtu>
+            </ICMP_header>
+        </Frame>
+    </Flow>
+</FlowConfigurations>

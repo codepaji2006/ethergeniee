@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<FlowConfigurations>
+    <Flow>
+        <Frame>
+            <Ethernet_header>
+                <h_dest>00:00:de:ad:be:ef</h_dest>
+                <h_source>1c:2d:de:ad:be:ef</h_source>
+                <proto>0x8100</proto>
+            </Ethernet_header>
+            <VLAN_header>
+                <h_vlan_TCI>20</h_vlan_TCI>
+                <h_vlan_encapsulated_proto>0x88e7</h_vlan_encapsulated_proto>
+            </VLAN_header>
+            <Custom_data>
+                <file>data/data_eth.bin</file>
+            </Custom_data>
+        </Frame>
+    </Flow>
+</FlowConfigurations>
