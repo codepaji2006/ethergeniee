@@ -1,4 +1,9 @@
 
+#Distributed under GPLv2.0 license.
+#
+#You may copy and distribute verbatim copies of the Program's source code as you receive it, in any medium, provided that you conspicuously and appropriately publish on each copy an appropriate copyright notice and disclaimer of warranty; keep intact all the notices that refer to this License and to the absence of any warranty; and give any other recipients of the Program a copy of this License along with the Program.
+#
+#Disclaimer:Absolutely no warranty and your use is at your own risk.
 import FlowConfigurations.FlowConfigurations as FlowConfigurations
 import Linux.Linux as Linux
 from optparse import OptionParser
