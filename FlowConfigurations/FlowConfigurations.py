@@ -1,3 +1,9 @@
+#Distributed under GPLv2.0 license.
+#
+#You may copy and distribute verbatim copies of the Program's source code as you receive it, in any medium, provided that you conspicuously and appropriately publish on each copy an appropriate copyright notice and disclaimer of warranty; keep intact all the notices that refer to this License and to the absence of any warranty; and give any other recipients of the Program a copy of this License along with the Program.
+#
+#Disclaimer:Absolutely no warranty and your use is at your own risk.
+
 import xml.etree.ElementTree as ET
 import struct
 import socket
@@ -136,22 +142,18 @@ class FlowConfigurations:
         psh=int(dict_tcp["psh"])
         ack=int(dict_tcp["ack"])
         urg=int(dict_tcp["urg"])
-        ece=int(dict_tcp["ece"])
-        cwr=int(dict_tcp["cwr"])
         window=int(dict_tcp["window"])
         check=int(dict_tcp["check"])
         urg_ptr=int(dict_tcp["urg_ptr"])
         flags=0#16 bit
-        flags|=(res1<<12)
-        flags|=(doff<<8)
-        flags|=(fin<<7)
-        flags|=(syn<<6)
-        flags|=(rst<<5)
-        flags|=(psh<<4)
-        flags|=(ack<<3)
-        flags|=(urg<<2)
-        flags|=(ece<<1)
-        flags|=cwr
+        flags|=(doff<<12)
+        flags|=(res1<<8)
+        flags|=(urg<<5)
+        flags|=(ack<<4)
+        flags|=(psh<<3)
+        flags|=(rst<<2)
+        flags|=(syn<<1)
+        flags|=(fin)
         tcphdr=struct.pack("!HHIIHHHH",source,dest,seq,ack_seq,flags,window,check,urg_ptr)
         return tcphdr
 
