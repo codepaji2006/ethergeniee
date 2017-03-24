@@ -1,9 +1,14 @@
 #!/usr/bin/python
 #Distributed under GPLv2.0 license.
-#
-#You may copy and distribute verbatim copies of the Program's source code as you receive it, in any medium, provided that you conspicuously and appropriately publish on each copy an appropriate copyright notice and disclaimer of warranty; keep intact all the notices that refer to this License and to the absence of any warranty; and give any other recipients of the Program a copy of this License along with the Program.
-#
-#Disclaimer:Absolutely no warranty and your use is at your own risk.
+#Author: codepaji2006@github
+#Repo: https://github.com/codepaji2006
+#You may copy and distribute verbatim copies of the Program's source code as you
+#receive it, in any medium, provided that you conspicuously and appropriately publish 
+#on each copy an appropriate copyright notice and disclaimer of warranty; keep intact all
+#the notices that refer to this License and to the absence of any warranty; and give any other recipients
+#of the Program a copy of this License along with the Program.
+#you must preserve the author and Repo notice when distributing or using this code.
+#Disclaimer:Absolutely no warranty and your use is at your own risk
 
 from socket import AF_INET, AF_INET6
 import os
